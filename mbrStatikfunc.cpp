@@ -19,3 +19,10 @@ public:
 
     mahasiswa(string pnama) : nama(pnama) { setID(); }
 };
+
+int mahasiswa::nim = 0; // Definisi Static Variable
+
+void mahasiswa::setID()
+{
+    id = ++nim;
+}
