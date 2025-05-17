@@ -10,4 +10,12 @@ public:
     angka(int); // construction
     ~angka();   // destruction
     void cetakData();
-    void
+    void isiData();
+};
+// Definisi member function
+angka::angka(int i)
+{ // constructor
+    panjang = i;
+    arr = new int[i]; // alokasi memori
+    isiData();
+}
