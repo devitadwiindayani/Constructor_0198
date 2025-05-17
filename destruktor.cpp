@@ -19,3 +19,11 @@ angka::angka(int i)
     arr = new int[i]; // alokasi memori
     isiData();
 }
+
+angka::~angka()
+{ // destructor
+    cout << endl;
+    cetakData();
+    delete[] arr;
+    cout << "Alamat Array Sudah Dilepaskan" << endl;
+}
